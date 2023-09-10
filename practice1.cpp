@@ -1,18 +1,18 @@
-// sum of two numbers
-
 #include <iostream>
 
 int main(){
 
-    int a = 0;
-    int b = 0;
-    int sum = 0;
+    int n = 0;
 
-    std::cin >> a;
-    std::cin >> b;
+    std::cout << "input number\n";
+    std::cin >> n; 
 
-    sum = a + b;
+    int rn = 0;
+    while (n != 0){
+        rn = (rn*10) + (n % 10);
+        n /= 10;
+    }
+    std::cout << "rev is " << rn << "\n";
 
-    std::cout << sum;
 
 }
